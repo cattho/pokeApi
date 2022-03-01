@@ -1,0 +1,77 @@
+.page-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.form-container{
+    background: var(--bg2);   
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pokeimg{
+    width:30rem;
+}
+
+.btnRegis{
+    background: var(--green) !important;
+    border: none !important;
+}
+
+.btnRegis:hover{
+    background: var(--orange) !important;
+}
+
+.btnlog{
+    width: 150px;
+    margin: 0 10px 0 10px;
+}
+
+.letrapeq{
+    font-size: 10px;
+}
+
+.pokedexIcon{   
+    border: none !important;
+}
+
+.pokedexIcon:hover{
+    background: none !important;
+}
+
+/* registro pokemon */
+.formregisPeli{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('https://i.pinimg.com/originals/06/5e/5e/065e5e9239f7d492dc3d64e57e84d6ed.jpg');
+    height: 400px;
+}
+
+.inputPoke{
+    width: 300px;
+    border: 1px solid var(--green);
+    resize: none;
+    border-radius: 10px;
+}
+
+.table{
+    background: var(--bg2);
+    margin-top: 10px;
+}
+
+.labelWords{
+    color: #fff;
+    text-decoration: none;
+}
+
+.btnpokedex{
+    background: var(--orange) !important;
+    border: none !important;
+    padding: 5px !important;
+}

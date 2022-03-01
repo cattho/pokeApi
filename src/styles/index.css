@@ -1,0 +1,20 @@
+@import './form.css';
+@import './cards.css';
+@import './pokeballCheking.css';
+
+/* paleta de colores */
+:root{
+  --bg: #424242 url(https://assets.pokemon.com/static2/_ui/img/chrome/body_bg.png);
+  --bg2:#fff url(https://assets.pokemon.com/static2/_ui/img/chrome/container_bg.png);
+  --red:#e3350d;
+  --orange:#ee6b2f;
+  --yellow:#e6bc2f;
+  --green:#4dad5b;
+  --blue:#30a7d7;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+}
