@@ -1,6 +1,7 @@
 @import './form.css';
 @import './cards.css';
 @import './pokeballCheking.css';
+@import './pokedex.css';
 
 /* paleta de colores */
 :root{
@@ -15,6 +16,6 @@
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 5px;
   background: var(--bg);
 }

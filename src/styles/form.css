@@ -24,7 +24,9 @@
 }
 
 .btnRegis:hover{
-    background: var(--orange) !important;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%) !important;
 }
 
 .btnlog{
@@ -42,6 +44,14 @@
 
 .pokedexIcon:hover{
     background: none !important;
+}
+.btnfb{
+    width: 150px;
+    margin: 0 10px 0 10px;
+}
+
+.fb-icon{
+    width: 25px;
 }
 
 /* registro pokemon */
@@ -74,4 +84,10 @@
     background: var(--orange) !important;
     border: none !important;
     padding: 5px !important;
+}
+
+.imgLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

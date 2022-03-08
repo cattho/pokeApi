@@ -57,14 +57,16 @@ const Login = () => {
 
             <Form.Group as={Row} className="mb-3">
                 <Col sm={{ span: 10, offset: 2 }}>
-                <Button className='btnRegis btnlog' type="submit"onClick={() =>{handleLoginEmailPass()}}>Sign in</Button>
+                <Button className='btnRegis btnlog' type="submit"onClick={() =>{handleLoginEmailPass()}}>Conectarse</Button>
                 <Button className='btnRegis btnlog'><img className="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="google button" onClick={() =>{handleGoogleLog()}} /></Button>
+                <Button className='btnfb'><img className="fb-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/2048px-Facebook_f_logo_%282019%29.svg.png" alt="facebook-button"/></Button>
+
                 </Col>
-                <Form.Label className='labelWords'>¿No tienes una cuenta? </Form.Label>
+                <Form.Label className='labelWordsbl'>¿No tienes una cuenta? </Form.Label>
                 <Link to="/registro"> Registrate</Link>
             </Form.Group>
             
-            <img src='https://assets.pokemon.com/static2/_ui/img/account/pokemon-login.png' alt='pokemon-login' />
+            <img className='imgLogin' src='https://assets.pokemon.com/static2/_ui/img/account/pokemon-login.png' alt='pokemon-login' />
         </Form>
        </div>
     </div>

@@ -20,6 +20,9 @@ const Pokedex = () => {
   
   return (
     <div>
+      <div className='imgPokedexContainer'>
+      <img className='pokedeximg' src='https://res.cloudinary.com/dfp8qduho/image/upload/v1646758354/pokemon/agukyjj8hq0hspcyryln.png' alt='poke-buscar' />
+      </div>
       <Form className="d-flex">          
               <FormControl
                 type="search"
@@ -30,10 +33,10 @@ const Pokedex = () => {
               />
               <Button onClick={buscando} className='btnpokedex'>Buscar</Button>
             </Form>
-            <div>
+            <div className='containerPokedex'>
               {
                 pokemon &&
-                <div>
+                <div className='cardPokedex'>
                   <h1>Nombre:{pokemon.name}</h1>
                   <h3>Peso:{pokemon.weight}</h3>
                   <img src={pokemon.sprites.other.dream_world.front_default} />
