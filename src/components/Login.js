@@ -57,7 +57,7 @@ const Login = () => {
 
                 </Col>
                 <Form.Label className='labelWordsbl'>¿No tienes una cuenta? </Form.Label>
-                <Link to="/registro"> Registrate</Link>
+                <Link to="/registro" className='letrasRegistro'> Registrate</Link>
             </Form.Group>
             
             <img className='imgLogin' src='https://assets.pokemon.com/static2/_ui/img/account/pokemon-login.png' alt='pokemon-login' />
