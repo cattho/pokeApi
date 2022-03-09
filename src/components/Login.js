@@ -32,19 +32,13 @@ const Login = () => {
        <div className='form-container'>        
        <Form onSubmit={handleSubmit}>
             <img className='pokeimg' src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pokémon_logo.svg/2560px-International_Pokémon_logo.svg.png' alt='Pokemon' />
-            <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
-                <Form.Label column sm={2}>
-                Email
-                </Form.Label>
+            <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">                
                 <Col sm={10}>
                 <Form.Control type="email" placeholder="Email" name='email' value={email} onChange={handleInputChange} />
                 </Col>
             </Form.Group>
 
-            <Form.Group as={Row} className="mb-3" controlId="formHorizontalPassword">
-                <Form.Label column sm={2}>
-                Password
-                </Form.Label>
+            <Form.Group as={Row} className="mb-3" controlId="formHorizontalPassword">                
                 <Col sm={10}>
                 <Form.Control type="password" placeholder="Password" name='password' value={password} onChange={handleInputChange} />
                 </Col>
