@@ -6,7 +6,7 @@
 /* paleta de colores */
 :root{
   --bg: #424242 url(https://assets.pokemon.com/static2/_ui/img/chrome/body_bg.png);
-  --bg2:var(--blue) url(https://assets.pokemon.com/static2/_ui/img/chrome/container_bg.png);
+  --bg2:white url(https://assets.pokemon.com/static2/_ui/img/chrome/container_bg.png);
   --red:#e3350d;
   --orange:#ee6b2f;
   --yellow:#e6bc2f;
@@ -15,6 +15,7 @@
 }
 
 body {
+  box-sizing: border-box;
   margin: 0;
   padding: 5px;
   background: var(--bg);
