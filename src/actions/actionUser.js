@@ -1,5 +1,5 @@
 import { createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth"
-import { logWithGoogle } from "../firebase/firebaseConfig"
+import { logWithFacebook, logWithGoogle } from "../firebase/firebaseConfig"
 import { typesUser } from "../types/types"
 
 
@@ -30,6 +30,17 @@ export const syncRegister = (email, nombre, password) => {
 }
 
 // login de usuario
+
+export const asyncFacebookLogin = () =>{
+    return(dispatch) =>{
+        const auth = getAuth()
+        signInWithPopup(auth, logWithFacebook)
+        .then(({user})=>{
+            dispatch(synclogin(user.uid,user.displayName))
+        })
+    }
+}
+
 export const asyncGoogleLogin = () => {
     return (dispatch) => {
         const auth = getAuth()

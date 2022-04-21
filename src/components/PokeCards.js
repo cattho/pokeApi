@@ -5,7 +5,7 @@ import Swal from 'sweetalert2'
 
 const PokeCards = () => {
   const [cards, setCards] = useState([])
-  const [loadMore, setLoadMore] = useState('https://pokeapi.co/api/v2/pokemon?limit=25')
+  const [loadMore, setLoadMore] = useState('https://pokeapi.co/api/v2/pokemon?limit=50')
 
 
 
@@ -47,6 +47,7 @@ return (
                 padding: '3em',
                 color: '#30a7d7',
                 background: '#fff url(/images/trees.png)',
+                confirmButtonColor:'#000',
                 backdrop: `
                   rgba(0,0,0,0.8)
                   url("https://img1.picmix.com/output/stamp/normal/0/9/0/4/1604090_a14a5.gif")
