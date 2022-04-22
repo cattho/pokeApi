@@ -24,7 +24,7 @@ const NavBar = () => {
                 />
             </Navbar.Brand>
             <Form className="d-flex">
-                <Button className='pokedexIcon' variant="outline-success" as={Link} to='/pokedex'><img width="auto" height="30px" src='https://flyclipart.com/thumb2/ball-icon-168685.png' alt="pokeball-icon"  /></Button>
+                <Button className='pokedexIcon' variant="outline-success" as={Link} to='/pokedex'><img width="auto" height="30px" src='https://flyclipart.com/thumb2/ball-icon-168685.png' alt="pokeball-icon"  />Buscador</Button>
                 <Button variant="outline-success" onClick={() =>{handleLogOut()}}>LogOut</Button>
             </Form>
             </Container>

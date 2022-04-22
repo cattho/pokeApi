@@ -4,7 +4,7 @@ import Swal from 'sweetalert2'
 
 const PokeCards = () => {
   const [cards, setCards] = useState([])
-  const [loadMore, setLoadMore] = useState('https://pokeapi.co/api/v2/pokemon?limit=52')
+  const [loadMore, setLoadMore] = useState('https://pokeapi.co/api/v2/pokemon?limit=55')
 
 
 
@@ -61,8 +61,11 @@ const PokeCards = () => {
             }}>
               <div className='pokeCard'>
                 <img alt='pokemon' src={poke.sprites.other.dream_world.front_default} />
-                <p> N° {poke.id}</p>
-                <h3>{poke.name}</h3>
+                <p className='pokeId'> N° {poke.id}</p>
+                <h3 className='pokeName'>{poke.name}</h3>
+                <div className='typesContainer'>
+                  <p className='type'>{poke.types[0].type.name}</p>
+                </div>
               </div>
             </div>
           ))

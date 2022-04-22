@@ -67,6 +67,7 @@
 }
 
 .pokedexIcon:hover{
+    color: var(--orange) !important;
     background: none !important;
 }
 .btnfb{
