@@ -3,8 +3,8 @@ import Swal from 'sweetalert2'
 
 
 const PokeCards = () => {
-  const [cards, setCards] = useState([])
-  const [loadMore, setLoadMore] = useState('https://pokeapi.co/api/v2/pokemon?limit=55')
+  const [cards, setCards] = useState([]);
+  const [loadMore, setLoadMore] = useState('https://pokeapi.co/api/v2/pokemon?limit=55');
 
 
 
@@ -43,14 +43,20 @@ const PokeCards = () => {
           cards.map((poke, index) => (
             <div key={index} onClick={() => {
               activarModalPoke(Swal.fire({
-                title: `${poke.name}`,
-                content: `${poke.types}`,
-                width: 600,
-                imageUrl: `${poke.sprites.other.dream_world.front_default}`,
-                padding: '3em',
-                color: '#30a7d7',
-                background: '#fff url(/images/trees.png)',
-                confirmButtonColor: '#000',
+                html: `
+               <div class='modalContainer'>
+                  <div>
+                     <div class='pokeNameModal'>${poke.name}</div>
+               <img class='pokeImgModal' src=${poke.sprites.other.dream_world.front_default} />
+                  </div>
+
+                  <div class='statsContainer'>
+                    <p><b>Heal Points:</b> ${poke.stats[0].base_stat}</p>
+                    <p><b>Attack Points:</b> ${poke.stats[1].base_stat}</p>
+                    <p><b>Defense Points:</b> ${poke.stats[2].base_stat}</p>
+                  </div>
+               </div>
+                `,
                 backdrop: `
                 rgba(0,0,0,0.8)
                 url("https://img1.picmix.com/output/stamp/normal/0/9/0/4/1604090_a14a5.gif")
