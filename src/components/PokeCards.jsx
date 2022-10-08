@@ -49,9 +49,9 @@ const PokeCards = () => {
                   </div>
 
                   <div class='statsContainer'>
-                    <p><b>Heal Points:</b> ${poke.stats[0].base_stat}</p>
-                    <p><b>Attack Points:</b> ${poke.stats[1].base_stat}</p>
-                    <p><b>Defense Points:</b> ${poke.stats[2].base_stat}</p>
+                    <p><b>Heal Points:</b> ${poke.stats[0].base_stat} 💗 </p>
+                    <p><b>Attack Points:</b> ${poke.stats[1].base_stat} 🔥</p>
+                    <p><b>Defense Points:</b> ${poke.stats[2].base_stat} 🛡️</p>
                   </div>
                </div>
                 `,

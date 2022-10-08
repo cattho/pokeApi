@@ -32,22 +32,23 @@ const ResultadosBusqueda = () => {
                         <div className="maain-results">
                             <p className='pokeId'>Pokemon N° {pokeResults.id}</p>
                             <img src={pokeResults.sprites.other.home.front_default} alt={pokeResults.name} />
-                            <ul className='poke-type'>Type:
+                            <ul className='poke-type '>Type:
                                 {pokeResults.types.map(typePoke =>
                                     <li>{typePoke.type.name.toUpperCase()}</li>)}
                             </ul>
                         </div>
 
                         <div className="stats-container">
-                            <p>Heal Points: {pokeResults.stats[0].base_stat} ❤</p>
-                            <p>Attack Points: {pokeResults.stats[1].base_stat} 🔥</p>
-                            <p>Defense Points: {pokeResults.stats[2].base_stat} 🛡️</p>
+                            <p className='stats'>Heal Points: {pokeResults.stats[0].base_stat} 💗</p>
+                            <p className='stats'>Attack Points: {pokeResults.stats[1].base_stat} 🔥</p>
+                            <p className='stats'>Defense Points: {pokeResults.stats[2].base_stat} 🛡️</p>
 
-                            <h4>Abilities {keyword.toUpperCase()}</h4>
+                            <h4>Abilities of {keyword.toUpperCase()}</h4>
                             {
                                 pokeResults.abilities.map(abilityObject =>
-                                    <li>{abilityObject.ability.name.toUpperCase()}</li>)
+                                    <li className='abiliti-list'>{abilityObject.ability.name.toUpperCase()}</li>)
                             }
+                            <h4>PNG's for {keyword}</h4>
                             <div className="png-containers">
                                 <div>
                                     <img src={pokeResults.sprites.front_default} alt={pokeResults.name} />

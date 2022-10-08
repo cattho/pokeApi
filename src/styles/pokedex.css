@@ -41,11 +41,35 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.poke-type {
-    border: 1px solid red;
+.poke-type{
+    margin: 15px 0;
+    font-weight: 500;
+}
+
+.poke-type li{
+    list-style: none;
+    margin-left: 2rem;
+    line-height: 2.5rem;
 }
 
 .stats-container {
     width: 20%;
     min-width: 40%;
+    padding: 2rem;
+}
+
+.stats{
+    font-size: large;
+    font-weight: 500;
+    line-height: 2rem;
+}
+
+.abiliti-list{
+    list-style: none;
+    line-height: 2rem;
+}
+
+.png-containers{
+    display: flex;
+    justify-content: space-around;
 }
