@@ -40,7 +40,7 @@ const Login = () => {
                     </div>
 
                     <div className='formContainer'>                     
-                        <input type="email" placeholder="Email" name='email' value={email} onChange={handleInputChange} />                         
+                        <input type="email" placeholder="Email" name='email' value={email} onChange={handleInputChange} autoComplete="off" />                         
                         <input type="password" placeholder="Password" name='password' value={password} onChange={handleInputChange} />
                     </div>
 

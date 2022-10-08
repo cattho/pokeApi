@@ -4,9 +4,7 @@ import Swal from 'sweetalert2'
 
 const PokeCards = () => {
   const [cards, setCards] = useState([]);
-  const [loadMore, setLoadMore] = useState('https://pokeapi.co/api/v2/pokemon?limit=55');
-
-
+  const [loadMore, setLoadMore] = useState('https://pokeapi.co/api/v2/pokemon?limit=120');
 
   const traerPokemon = async () => {
     const res = await fetch(loadMore)
@@ -14,7 +12,7 @@ const PokeCards = () => {
 
     setLoadMore(data.next)
 
-    function pokemonObject(result) {
+    const pokemonObject = (result) => {
       result.forEach(async pokemon => {
         const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon.name}`)
         const data = await res.json()
@@ -66,7 +64,7 @@ const PokeCards = () => {
               }))
             }}>
               <div className='pokeCard'>
-                <img alt='pokemon' src={poke.sprites.other.dream_world.front_default} />
+                <img alt={poke.name} src={poke.sprites.other.dream_world.front_default} />
                 <p className='pokeId'> N° {poke.id}</p>
                 <h3 className='pokeName'>{poke.name}</h3>
                 <div className='typesContainer'>
