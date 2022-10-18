@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 const ResultadosBusqueda = () => {
     const navigate = useNavigate()
@@ -17,7 +18,11 @@ const ResultadosBusqueda = () => {
                 setPokeResults(res);
             })
             .catch(error => {
-                alert('Este pokemon no existe')
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Este pokémon no existe!'
+                  })
                 navigate('/')
             })
     }, [pokeResults]);

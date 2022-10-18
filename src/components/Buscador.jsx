@@ -9,7 +9,7 @@ const Buscador = () => {
 
     const handleinputChange = e =>{
         e.preventDefault()
-        const keyword = e.target.keyword.value.trim();
+        const keyword = e.target.keyword.value.trim().toLowerCase();
         if (keyword.length === 0) {
             Swal.fire('Tienes que escribir una palabra clave')
             return;
@@ -25,15 +25,13 @@ const Buscador = () => {
 
     return (
         <>
-            <Form className="d-flex" onSubmit={handleinputChange}>
-                {/* <Button className='pokedexIcon' variant="outline-success" as={Link} to='/pokedex'><img width="auto" height="30px" src='https://flyclipart.com/thumb2/ball-icon-168685.png' alt="pokeball-icon" />Buscador</Button> */}
-
+            <Form className="d-flex form-searcher" onSubmit={handleinputChange}>
+                <img width="auto" height="30px" src='https://flyclipart.com/thumb2/ball-icon-168685.png' alt="pokeball-icon" />
                 <input 
                 type="text"
                 name='keyword'
                 placeholder='Enter the name of your pokemon'
                 />
-
                 <button type='submit'>Search</button>
             </Form>
         </>

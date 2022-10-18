@@ -1,0 +1,19 @@
+.form-searcher {
+    display: flex;
+    gap: 1rem;
+}
+
+.form-searcher input {
+    border: 1px solid var(--green);
+    padding: 3px;
+    border-radius: 8px;
+}
+
+.form-searcher button {
+    border: none;
+    border-radius: 8px;
+    padding: 0 5px;
+    background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
+    linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%) !important;
+}

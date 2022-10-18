@@ -1,7 +1,7 @@
-@import './form.css';
 @import './cards.css';
 @import './pokeballCheking.css';
 @import './pokedex.css';
+@import './navbarStyles.css';
 
 /* paleta de colores */
 :root{

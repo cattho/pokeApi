@@ -1,9 +1,13 @@
 .PokeCardPage{
     background: var(--bg);
-    padding: 15px 8rem;
+    display: flex;
+    justify-content: center;
 }
 
 .cardContainer{
+    margin-top: 15px;
+    width: 90%;
+    min-width: 80%;
     align-items: center;
     justify-content: center;
     background: var(--bg2);  
